@@ -6,39 +6,101 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
+    margin: 0;
 }
 
-/* Table Basic Styling */
-#conversionTable {
-    width: 100%;
-    max-width: 600px;
-    border-collapse: collapse;
+/* Conversion Grid Container */
+.conversion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Conversion Item Box */
+.conversion-item {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Cell Styling */
-#conversionTable td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #e0e0e0;
-    transition: background-color 0.3s ease;
+.conversion-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Link Styling */
-#conversionTable a {
+.conversion-item a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     display: block;
     width: 100%;
+    font-size: 1.2rem;
 }
 
-/* Hover Effects */
-#conversionTable td:hover {
-    background-color: #f0f0f0;
-}
-
-#conversionTable a:hover {
+.conversion-item a:hover {
     color: #0066cc;
+}
+
+/* Conversion Details Page Styling */
+#conversionDetails {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 600px;
+    width: 100%;
+}
+
+#conversionHeader {
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+#conversionContent {
+    padding: 10px 0;
+}
+
+#conversionContent button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#conversionContent button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .conversion-grid {
+        padding: 10px;
+    }
+    
+    .conversion-item {
+        width: 120px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conversion-item {
+        width: 100px;
+        padding: 12px;
+    }
 }
