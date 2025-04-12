@@ -1,0 +1,10 @@
+{
+    "cryptocurrencies": [
+      { "id": "bitcoin", "symbol": "BTC" },
+      { "id": "ethereum", "symbol": "ETH" },
+      { "id": "litecoin", "symbol": "LTC" },
+      { "id": "ripple", "symbol": "XRP" },
+      { "id": "cardano", "symbol": "ADA" }
+    ]
+  }
+  

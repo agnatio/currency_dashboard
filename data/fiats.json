@@ -1,0 +1,10 @@
+{
+    "fiatcurrencies": [
+      { "id": "usd", "symbol": "USD" },
+      { "id": "eur", "symbol": "EUR" },
+      { "id": "gbp", "symbol": "GBP" },
+      { "id": "jpy", "symbol": "JPY" },
+      { "id": "cny", "symbol": "CNY" }
+    ]
+  }
+  

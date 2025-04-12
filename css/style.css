@@ -1,0 +1,44 @@
+/* Basic Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Table Basic Styling */
+#conversionTable {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cell Styling */
+#conversionTable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+/* Link Styling */
+#conversionTable a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+/* Hover Effects */
+#conversionTable td:hover {
+    background-color: #f0f0f0;
+}
+
+#conversionTable a:hover {
+    color: #0066cc;
+}
